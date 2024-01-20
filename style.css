@@ -1,0 +1,518 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kurale&family=Open+Sans:wght@300&family=Orbitron:wght@400;800&family=Red+Hat+Display:wght@500;700;900&family=Varela&display=swap');
+
+:root {
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+--purple: hsl(279, 86%, 73%);
+--green: hsl(164, 77%, 69%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+}
+
+/*Навигация*/
+header img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+header nav{
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--bright-blue);
+ 
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 20px 30px -8px hsl(224, 23%, 55%);
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+  
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+
+
+
+/*Дефиниране на всяка секция*/
+section{
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 10vh;
+}
+
+/*Оформяне на картичка*/
+.card {
+    width: 450px;
+    background-color: white;
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+   
+}
+
+.title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.hero-image {
+   width: 100%;
+}
+
+/*Подреждане на картичките*/
+.container {
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.order-description {
+    line-height: 25px;
+}
+
+.container > * {
+    margin: 13px 0;
+}
+
+/*Оформяне на секция в картичката*/
+.plan-container {
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-container a {
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.plan-container a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plan-container strong {
+    color: var(--dark-blue);
+}
+
+.plan-description {
+    line-height: 20px;
+    margin-right: 75px;
+}
+
+button {
+    
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.proceed-button {
+    width: 100%;
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.proceed-button:hover {
+    opacity:  0.8;
+}
+
+.cancel-button {
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin-top: 22px;
+    width: 100%;
+  
+}
+
+.cancel-button:hover {
+    color:black;
+}
+
+
+/*Контейнер на картичките*/
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+ }
+
+ .plans h1{
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 42px;
+ }
+
+/*Основна секция - първа*/
+
+.main-img{
+    width: 600px;
+    height:400px;
+}
+
+.harmonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+}
+.harmonial-info h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 42px;
+}
+.harmonial-info p{
+    color: var(--desaturated-blue);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align:justify;
+    padding-right: 100px;
+    line-height: 1.5;
+}
+
+.harmonial h1 span{
+    color: var(--purple);
+}
+
+.try-button {
+    width: 50%;
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.try-button:hover {
+    opacity:  0.8;
+}
+.harmonial-info{
+
+ width: 650px;
+}
+
+.second{
+    background: var(--purple);
+}
+
+.third{
+    background: var(--green);
+}
+
+/* Секция Podcasts*/
+
+.podcasts{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+.podcasts-pic{
+    width: 600px;
+}
+.podcasts-info{
+    width: 650px;
+    padding-top: 60px;
+}
+.podcasts-info h1{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 42px;
+}
+
+.podcasts-info p{
+    color: var(--desaturated-blue);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align:justify;
+    padding-right:90px;
+    line-height: 1.5;
+}
+.podcasts h1 span{
+    color: var(--purple);
+}
+/*Секция услуги*/
+
+.services img{
+    width: 70px;
+    margin-bottom:20px;
+  
+}
+
+
+.services-container{
+    margin-top: 60px;
+    margin-bottom:60px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+.services h1{
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 42px;
+    margin-top: 100px;
+}
+.banner{
+    background-color: #f2f2f2;
+    padding: 40px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;    
+    border-radius: 12px;     
+    align-items: center;
+    width: 500px;
+
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.banner h2{
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.cta-button{
+    padding: 16px 32px;
+    font-size: 16px;
+}
+.cta-button.upload{
+   color: var(--bright-blue);
+}
+.cta-button.help{
+    color: var(--purple);
+}
+.upload{
+    box-shadow: 0 20px 30px -8px hsl(224, 23%, 55%);
+}
+.help{
+    box-shadow: 0 20px 30px -8px hsl(279, 86%, 73%);
+}
+
+/*Секция Tips*/
+
+.tips{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.chart-img{
+    width: 600px;
+    height:400px;
+}
+
+.tips-info h2 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 42px;
+    padding-bottom: 25px;
+}
+
+.tips h2 span{
+    color: var(--purple);
+}
+.tips-info-container{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+.checkmark{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.tips-list-item{
+    display: flex;
+    padding: 10px 0;
+}
+
+.tips-list-container{
+ padding: 25px 0;
+}
+.tips-info h3{
+    color: var(--desaturated-blue);
+}
+.tips-list-item p{
+    color: var(--desaturated-blue);
+}
+
+/*Кантактна форма*/
+
+.contact-container h2{
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 900;
+   font-size: 42px;
+
+}
+.contact-container h2 span{
+color: var(--purple);
+}
+
+.contact-container p{
+    color: var(--desaturated-blue);
+    text-align: center;
+ 
+}
+
+p a {
+    text-decoration: none;
+  color: var(--purple);
+  font-weight: 400;
+}
+
+.contact-form-block{
+    width: 60%;
+    background-color: #f2f2f2;
+    margin: 0 auto 48px;
+    padding: 64px;
+    box-shadow: 17px 17px 200px hsl(224, 23%, 55%);
+    border-radius: 12px;
+}
+.contact-container{
+    padding-bottom: 20px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.contact-form-row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 16px;
+    align-items: flex-start;
+    justify-content: space-between;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
+.contact-form-item{
+    width: 100%;
+}
+.contact-form-field-label{
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+label{
+    display: block;
+}
+.contact-form-field-text{
+    color: #0d0e10;
+    padding: 30px 28px;
+    font-size: 18px;
+    border-radius: 18px;
+    border: 1px solid #fff;
+    background-color: #ffffff;
+    margin-bottom: 24px;
+  }
+  .contact-form-field-text{
+    width: 100%;
+    height: 38px;
+  }
+  .area{
+    height: auto;
+  }
+
+  /*Футър*/
+
+footer{
+    background: var(--dark-blue);
+    width: 100%;
+    min-height: 60vh;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+
+ 
+}
+
+.footer-socials img{
+    width: 40px;
+    margin: 50px 20px;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text h2{
+   text-align: center;
+   color: white;
+   font-weight: 500;
+   font-size: 16px;
+   margin: 20px;
+   letter-spacing: 2px;
+
+}
