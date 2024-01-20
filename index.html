@@ -123,7 +123,7 @@
                 Take advantage of our all-in-one, free platform with recording, editing,
                 analytics, fan engagement, and monetization tools.Enjoy unlimited hosting and distribute your podcast
                 everywhere.
-             </p>
+            </p>
             <button class="try-button">Learn more</button>
         </div>
         <img class="podcasts-pic" src="./images/world.svg" alt="Connected world">
@@ -145,7 +145,7 @@
                     <button class="cta-button upload">Try free</button>
                 </div>
             </div>
-        
+
             <div class="banner help">
                 <img src="./images/service-svgrepo-com.svg" alt="">
                 <h2>Helping brands share stories through<br>podcasting.</h2>
@@ -155,7 +155,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
     <!--Секция съвети-->
@@ -211,45 +210,47 @@
 
                     <div class="contact-form-row">
                         <div class="contact-form-item">
-                            <label for="field" class="contact-form-field-label">First Name
+                            <label for="fname" class="contact-form-field-label">First Name
                                 <span class="blue-span">*</span>
                             </label>
 
-                            <input type="text" name="Name" id="field" class="contact-form-field-text" required>
+                            <input type="text" name="name" id="name" class="contact-form-field-text" required>
                         </div>
                         <div class="contact-form-item">
-                            <label for="field" class="contact-form-field-label">Last Name
+                            <label for="lname" class="contact-form-field-label">Last Name
                                 <span class="blue-span">*</span>
                             </label>
-                            <input type="text" id="field" class="contact-form-field-text" required>
+                            <input type="text" name="lastname" id="lastname" class="contact-form-field-text" required>
                         </div>
                     </div>
 
                     <div class="contact-form-row">
                         <div class="contact-form-item">
-                            <label for="field" class="contact-form-field-label">Email address
+                            <label for="email" class="contact-form-field-label">Email address
                                 <span class="blue-span">*</span>
                             </label>
-                            <input type="email" name="Email" id="field" class="contact-form-field-text"
-                                placeholder="Enter your Email address" required 
+                            <input type="email" name="email" id="email" class="contact-form-field-text"
+                                placeholder="Enter your Email address" required
                                 oninvalid="this.setCustomValidity('Този имейл не е валиден!')">
 
                             <div class="contact-form-item"></div>
-                            <label for="field" class="contact-form-field-label">Company URL
+                            <label for="url" class="contact-form-field-label">Company URL
                                 <span class="blue-span">*</span>
                             </label>
-                            <input type="text" id="field" class="contact-form-field-text"
-                                placeholder="Enter URL address">
+                            <input type="url" name="url" id="url" class="contact-form-field-text"
+                                placeholder="Enter URL address" required
+                                oninvalid="this.setCustomValidity('Невалиден URL!')">
                         </div>
                     </div>
 
                     <div class="contact-form-row">
                         <div class="contact-form-item">
-                            <label for="field" class="contact-form-field-label">I'm interested in...
+                            <label for="option" class="contact-form-field-label">I'm interested in...
                                 <span class="blue-span">*</span>
                             </label>
 
-                            <select name="Option" id="field" class="contact-form-field-text">
+                            <select name="Option" id="option" class="contact-form-field-text" required>
+                                <option value="">-- SELECT INTEREST --</option>
                                 <option value="Another option">Private Podcasts</option>
                                 <option value="Partnership">A podcast partnership</option>
                                 <option value="New project">A new podcast project</option>
@@ -258,15 +259,14 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="contact-form-item">
-                        <label for="field" class="contact-form-field-label">Tell us about your requirements
+                        <label for="message" class="contact-form-field-label">Tell us about your requirements
                             <span class="blue-span">*</span>
                         </label>
 
-                        <textarea class="contact-form-field-text area" name="message" id="field" cols="30" rows="10"
-                            placeholder="How can we help you today...">
-
+                        <textarea class="contact-form-field-text area" name="message" id="message" cols="30" rows="10"
+                            placeholder="How can we help you today..." required="" oninput="setCustomValidity('')"
+                            oninvalid="this.setCustomValidity('Моля въвдете текст')">
                         </textarea>
                         <button class="try-button" class="button">Let's talk podcasting</button>
                     </div>
