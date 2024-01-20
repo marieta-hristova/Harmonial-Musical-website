@@ -206,17 +206,19 @@
             <br>
             <!--Контактна форма-->
             <div class="contact-form-block">
-                <form action="#" class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="181c421b-3034-45cc-9c52-fcd7faab9dfd">
 
                     <div class="contact-form-row">
                         <div class="contact-form-item">
-                            <label for="field" class="contact-form-field-label">First Name
+                            <label for="field" class="contact-form-field-label" required>First Name
                                 <span class="blue-span">*</span>
                             </label>
-                            <input type="text" id="field" class="contact-form-field-text">
+
+                            <input type="text" name="Name" id="field" class="contact-form-field-text">
                         </div>
                         <div class="contact-form-item">
-                            <label for="field" class="contact-form-field-label">Last Name
+                            <label for="field" class="contact-form-field-label" required>Last Name
                                 <span class="blue-span">*</span>
                             </label>
                             <input type="text" id="field" class="contact-form-field-text">
@@ -229,7 +231,7 @@
                             <label for="field" class="contact-form-field-label">Email address
                                 <span class="blue-span">*</span>
                             </label>
-                            <input type="text" id="field" class="contact-form-field-text"
+                            <input type="email" name="Email" id="field" class="contact-form-field-text"
                                 placeholder="Enter your Email address">
 
                             <div class="contact-form-item"></div>
@@ -247,13 +249,12 @@
                                 <span class="blue-span">*</span>
                             </label>
 
-                            <select name="" id="field" class="contact-form-field-text select">
+                            <select name="Option" id="field" class="contact-form-field-text">
                                 <option value="Another option">Private Podcasts</option>
-                                <option value="Another option">Private Podcasts</option>
-                                <option value="Another option">Private Podcasts</option>
-                                <option value="Another option">Private Podcasts</option>
-                                <option value="Another option">Private Podcasts</option>
-                                <option value="Another option">Private Podcasts</option>
+                                <option value="Partnership">A podcast partnership</option>
+                                <option value="New project">A new podcast project</option>
+                                <option value="Podcast help">Help with my podacst</option>
+                                <option value="Other">Something else...</option>
                             </select>
                         </div>
                     </div>
@@ -263,7 +264,7 @@
                             <span class="blue-span">*</span>
                         </label>
 
-                        <textarea class="contact-form-field-text area" name="Enquiry" id="field" cols="30" rows="10"
+                        <textarea class="contact-form-field-text area" name="message" id="field" cols="30" rows="10"
                             placeholder="How can we help you today...">
 
                         </textarea>
