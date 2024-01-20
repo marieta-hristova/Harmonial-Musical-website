@@ -483,7 +483,7 @@ label{
     height: auto;
   }
   input:invalid {
-    border: 2px dashed red;
+    border: 2px dashed rgb(20, 92, 248);
   }
   
   input:valid {
