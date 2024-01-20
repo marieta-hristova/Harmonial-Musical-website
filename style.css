@@ -467,12 +467,13 @@ label{
 }
 .contact-form-field-text{
     color: #0d0e10;
-    padding: 30px 28px;
+    padding: 0px 20px;
     font-size: 18px;
     border-radius: 18px;
     border: 1px solid #fff;
     background-color: #ffffff;
     margin-bottom: 24px;
+    
   }
   .contact-form-field-text{
     width: 100%;
@@ -480,6 +481,13 @@ label{
   }
   .area{
     height: auto;
+  }
+  input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:valid {
+    border: 2px solid black;
   }
 
   /*Футър*/
